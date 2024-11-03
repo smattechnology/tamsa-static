@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=shopping_cart" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Document</title>
+</head> 
+
+<body class="bg-white">
+    <header class="bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-10 shadow-lg lg:mx-12 lg:my-5 lg:h-16 lg:rounded-full">
+        <nav class="flex items-center justify-between px-12 h-16 lg:gap-8 text-gray-900 lg:rounded-lg">
+            <a href="">logo</a>
+
+            <div
+                class="dropdown-menu absolute -top-full left-0 py-2 max-lg:bg-[#FFFFFF30] w-full flex flex-col gap-6 items-center text-lg font-bold lg:static lg:flex-row lg:justify-around">
+                <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                    <li class="hover:text-rose-500 cursor-pointer">HOME</li>
+                    <li class="hover:text-rose-500 cursor-pointer">PAGES</li>
+                    <li class="hover:text-rose-500 cursor-pointer">PRODUCTS</li>
+                    <li class="hover:text-rose-500 cursor-pointer">BLOGS</li>
+                    <li class="hover:text-rose-500 cursor-pointer">CONTACT</li>
+                </ul>
+                <div class="flex flex-col gap-6 lg:hidden">
+                    <button>none lg action</button>
+                    <button class="bg-orange-400 rounded-lg px-2 py-1">action</button>
+                </div>
+            </div>
+            <div class="hidden lg:flex lg:flex-row lg:gap-8 ">
+                <a class="hover:text-orange-400" href="">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+                <a class="hover:text-orange-400" href="">
+                    <i class="material-icons">person</i>
+                </a>
+            </div>
+            <div class="toggle-button lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-button");
+        const dropdown = document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", () => {
+            dropdown.classList.toggle('top-16');
+        })
+    </script>
+</body>
+
+</html>
